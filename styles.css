@@ -1,0 +1,168 @@
+/*
+------ 
+Global
+------ */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+}
+
+body {
+  background: white;
+  color: #162542;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+/* Base Typography & Design */
+.btn {
+  color: #162542;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  line-height: 26px;
+  font-weight: 900;
+}
+
+.grey {
+  background-color: #E8EFF2;
+}
+
+.orange {
+  background-color: #F16718;
+  color: #FFFFFF;
+}
+
+.clear {
+  color: #7B8BAD;
+}
+
+.hero-title {
+  font-size: 4.8rem;
+  line-height: 48px;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.body {
+  color: #7B8BAD;
+  font-size: 1.6rem;
+  text-transform: none;
+  line-height: 26px;
+}
+
+.hero-body {
+  margin-bottom: 2rem;
+}
+
+.product-title {
+  font-size: 3.2rem;
+  line-height: 36px;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  line-height: 28px;
+}
+
+.feature-image {
+  background-color: #F16718;
+  width: 6.5rem;
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.6rem;
+}
+
+.image{
+  width: 100%;
+  border-radius: 16px;
+}
+
+
+
+/* | Header | */
+header {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  justify-content: space-between;
+}
+
+/* CTA Container Styles */
+@media screen and (max-width:750px) {
+  main {
+    margin: 2rem;
+    max-width: 375px;
+  }
+
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .hero {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .hero-image{
+    object-fit: contain;
+    width: 100vw;
+    border-radius: 16px;
+  }
+
+  .product-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+
+  }
+
+  .product-title{
+    grid-row: 2 / 3;
+    
+   
+  }
+
+  .product-body{
+    grid-row: 3/3;
+    
+  }
+
+
+}
+/* 
+ @media screen and (min-width:750px) {
+  header {
+    margin: 4rem; 
+  }
+  main{
+    max-width: 768px;
+    margin: 4rem;
+  }
+
+  ct
+  
+} */
