@@ -267,7 +267,7 @@ header {
   .image-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 19.3rem 1fr;
+    grid-template-rows: .5fr 1fr;
     gap: 6rem 2rem;
   }
 
@@ -335,8 +335,9 @@ header {
   body{
     max-width: 768px;
     margin: auto;
-  
   }
+
+  
 
   header {
     margin: 3rem;
@@ -441,21 +442,23 @@ header {
 
   /* Layout */
 
-  body{
+   body{
     max-width: 1440px;
     margin: auto;
   
-  }
+  } 
   header{
-    margin-inline: 20rem;
+    margin-inline: 10rem;
     padding-top: 5rem;
   }
   /* Hero-section */
   .hero-section{
     display: grid;
-    grid-template-columns: 44.5rem 54rem;
+    /* grid-template-columns: 44.5rem 54rem; */
+    grid-template-columns: 44.5rem 1.5fr;
+    grid-template-rows: 48rem;
     gap: 6rem;
-    margin-inline: 20rem;
+    margin-inline: 10rem;
     padding-top: 8rem;
     padding-bottom: 3rem;
     
@@ -475,9 +478,9 @@ header {
 
   /* image-section */
   .image-section{
-    margin-inline: 20rem;
+    margin-inline: 10rem;
     display: grid;
-    grid-template-columns: 25.5rem 44.5rem 1fr;
+    grid-template-columns: 25.5rem 44.5rem 25.5rem;
     align-items: center;
     justify-items: center;
     gap: 2rem;
@@ -502,7 +505,7 @@ header {
   .details-section{
     display: flex;
     gap: 1rem;
-    margin-inline: 20rem;
+    margin-inline: 10rem;
     padding-top: 8rem;
     padding-bottom: 5rem;
   }
