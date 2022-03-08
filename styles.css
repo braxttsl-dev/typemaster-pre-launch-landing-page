@@ -235,6 +235,11 @@ header {
     display: none;
   }
 
+  /* body{
+    max-width: 375px;
+    margin: 0 auto;
+  } */
+
   button {
     font-size: var(--font-xsmall);
     line-height: var(--line-height-xsmall);
@@ -267,7 +272,7 @@ header {
   .image-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: .5fr 1fr;
+    grid-template-rows: minmax(1fr, 19.3rem) 1fr;
     gap: 6rem 2rem;
   }
 
@@ -320,7 +325,7 @@ header {
 
 }
 
-@media screen and (min-width: 768px) and (max-width:1027px) {
+@media screen and (min-width: 768px) and (max-width:1439px) {
 
   .mobile-image,
   .desktop-image {
@@ -331,13 +336,13 @@ header {
     font-size: var(--font-large);
     line-height: var(--line-height-large);
   }
-
+  
   body{
-    max-width: 768px;
-    margin: auto;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 
-  
+
 
   header {
     margin: 3rem;
@@ -347,8 +352,8 @@ header {
   /* Hero Section */
   .hero-section {
     display: grid;
-    grid-template-columns: 1fr 47.8rem;
-    grid-template-rows: 425px;
+    grid-template-columns: 1fr minmax(47.8rem, 60rem);
+    grid-template-rows: 42.5rem;
     gap: 2rem;
     margin-left: 3rem;
     align-items: center;
@@ -377,7 +382,7 @@ header {
   /* Image Section */
   .image-section {
     display: grid;
-    grid-template-columns: 21.4rem 44.5rem;
+    grid-template-columns: minmax(21.4rem, 25.5rem) 44.5rem;
     margin-inline: 3rem;
     gap: 6rem 3rem;
     padding-top: 3rem;
@@ -423,7 +428,7 @@ header {
 
 }
 
-@media screen and (min-width:1028px) {
+@media screen and (min-width:1440px) {
 
   .mobile-image,
   .tablet-image {
@@ -442,23 +447,21 @@ header {
 
   /* Layout */
 
-   body{
-    max-width: 1440px;
-    margin: auto;
-  
-  } 
   header{
-    margin-inline: 10rem;
+    margin-inline: 20rem;
     padding-top: 5rem;
+  }
+
+  body{
+    max-width: 1440px;
+    margin: 0 auto;
   }
   /* Hero-section */
   .hero-section{
     display: grid;
-    /* grid-template-columns: 44.5rem 54rem; */
-    grid-template-columns: 44.5rem 1.5fr;
-    grid-template-rows: 48rem;
+    grid-template-columns: 44.5rem 54rem;
     gap: 6rem;
-    margin-inline: 10rem;
+    margin-inline: 20rem;
     padding-top: 8rem;
     padding-bottom: 3rem;
     
@@ -478,9 +481,9 @@ header {
 
   /* image-section */
   .image-section{
-    margin-inline: 10rem;
+    margin-inline: 20rem;
     display: grid;
-    grid-template-columns: 25.5rem 44.5rem 25.5rem;
+    grid-template-columns: 25.5rem 44.5rem 1fr;
     align-items: center;
     justify-items: center;
     gap: 2rem;
@@ -505,7 +508,7 @@ header {
   .details-section{
     display: flex;
     gap: 1rem;
-    margin-inline: 10rem;
+    margin-inline: 20rem;
     padding-top: 8rem;
     padding-bottom: 5rem;
   }
