@@ -325,7 +325,7 @@ header {
 
 }
 
-@media screen and (min-width: 768px) and (max-width:1439px) {
+@media screen and (min-width: 768px) and (max-width:1279px){
 
   .mobile-image,
   .desktop-image {
@@ -338,8 +338,8 @@ header {
   }
   
   body{
-    max-width: 1280px;
-    margin: 0 auto;
+    max-width: 768px;
+    margin: auto;
   }
 
 
@@ -352,7 +352,7 @@ header {
   /* Hero Section */
   .hero-section {
     display: grid;
-    grid-template-columns: 1fr minmax(47.8rem, 60rem);
+    grid-template-columns: 1fr 47.8rem;
     grid-template-rows: 42.5rem;
     gap: 2rem;
     margin-left: 3rem;
@@ -428,11 +428,14 @@ header {
 
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1280px) {
 
   .mobile-image,
   .tablet-image {
     display: none;
+  }
+  .desktop-image{
+    display: block;
   }
 
   /* Typography Changes */
@@ -448,8 +451,9 @@ header {
   /* Layout */
 
   header{
-    margin-inline: 20rem;
+    margin-inline: 16rem;
     padding-top: 5rem;
+    padding-bottom: 8rem;
   }
 
   body{
@@ -458,43 +462,50 @@ header {
   }
   /* Hero-section */
   .hero-section{
-    display: grid;
-    grid-template-columns: 44.5rem 54rem;
-    gap: 6rem;
-    margin-inline: 20rem;
-    padding-top: 8rem;
-    padding-bottom: 3rem;
-    
+   display: grid;
+   margin-inline: 16rem;
+   padding-bottom: 3rem;
+   grid-template-columns: minmax(auto, 44.5rem) 1fr;
+   align-items: center;  
   }
 
   .hero-section_cta{
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    transform: translateY(6rem);
+    gap: 3rem;
   }
+
+
   
   .img1{
     border-radius: 1.5rem;
+    width: 54rem;
+    height: 48rem;
+    justify-self: end;
+
+
   }
   
 
   /* image-section */
   .image-section{
-    margin-inline: 20rem;
+    margin-inline: 16rem;
     display: grid;
     grid-template-columns: 25.5rem 44.5rem 1fr;
-    align-items: center;
-    justify-items: center;
     gap: 2rem;
   } 
 
-  .image-section_text{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-left: 6rem;
+ 
+  .image-section_text {
+      grid-column: 3/4;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-self: center;
+      width: 25.5rem;
+      gap: 2rem;
   }
+
   
   .img2,
   .img3 {
@@ -506,9 +517,11 @@ header {
   }
   /* details-section */
   .details-section{
-    display: flex;
-    gap: 1rem;
-    margin-inline: 20rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto,25.5rem));
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    margin-inline: 16rem;
     padding-top: 8rem;
     padding-bottom: 5rem;
   }
@@ -518,7 +531,7 @@ header {
   .detail{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
   }
 
 
