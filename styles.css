@@ -359,6 +359,7 @@ header {
     align-items: center;
   }
 
+
   .hero-section_cta {
     display: flex;
     flex-direction: column;
@@ -482,8 +483,6 @@ header {
     width: 54rem;
     height: 48rem;
     justify-self: end;
-
-
   }
   
 
